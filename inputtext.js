@@ -23,7 +23,7 @@
         <l:content>
           <Input
             id="passwordInput"
-  
+            type="Password"
             placeholder="Enter password ..." liveChange="onButtonPress"/>
         </l:content>
       </l:VerticalLayout>
@@ -31,7 +31,7 @@
       </script>        
   `;
 
-  class inputtext extends HTMLElement {
+  class InputPassword extends HTMLElement {
 
     constructor() {
       super();
@@ -180,7 +180,7 @@
     }
 
   }
-  customElements.define("com-fd-djaja-sap-sac-inputtext", inputtext);
+  customElements.define("com-fd-djaja-sap-sac-inputtext", InputPassword);
 
   // UTILS
   function loadthis(that) {
@@ -231,11 +231,11 @@
     });
   }
 
-//   function createGuid() {
-//     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
-//       let r = Math.random() * 16 | 0,
-//         v = c === "x" ? r : (r & 0x3 | 0x8);
-//       return v.toString(16);
-//     });
-//   }
+  // function createGuid() {
+  //   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
+  //     let r = Math.random() * 16 | 0,
+  //       v = c === "x" ? r : (r & 0x3 | 0x8);
+  //     return v.toString(16);
+  //   });
+  // }
 })();
