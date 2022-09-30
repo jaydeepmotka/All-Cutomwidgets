@@ -12,14 +12,14 @@
       {
         "kind": "main",
         "tag": "com-sap-sample-coloredbox-mj",
-        "url": "https://20bd-49-36-80-233.in.ngrok.io/static/coloredbox.js",
+        "url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/coloredbox.js",
         "integrity": "",
         "ignoreIntegrity": true
       },
       {
         "kind": "builder",
         "tag": "com-sap-sample-coloredbox-builder-mj",
-        "url": "https://20bd-49-36-80-233.in.ngrok.io/static/coloredbox_builder.js",
+        "url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/coloredbox_builder.js",
         "integrity": "",
         "ignoreIntegrity": true
       }
