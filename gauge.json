@@ -4,7 +4,7 @@
 	"name": "Google Gauge Box",
 	"description": "A Google Gauge box",
 	"newInstancePrefix": "googleGauge",
-	"icon": "https://20bd-49-36-80-233.in.ngrok.io/static/googleGauge.png",
+	"icon": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/googleGauge.png",
 	"vendor": "jaydeep",
 	"eula": "",
 	"license": "",
@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-google",
-			"url": "https://20bd-49-36-80-233.in.ngrok.io/static/gauge.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/gauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
