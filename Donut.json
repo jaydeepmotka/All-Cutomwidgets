@@ -1,0 +1,40 @@
+{
+	"eula": "",
+	"vendor": "jaydeep",
+	"license": "",
+	"id": "com.sap.sac.sample.donut.prepared",
+	"version": "4.4.7",
+	"name": "Donut_chart",
+	"newInstancePrefix": "Donut_chart",
+	"description": "Donut chart",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sap-sample-donut-prepared",
+			"url": "https://20bd-49-36-80-233.in.ngrok.io/static/Donut.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		}
+	},
+	"methods": {
+		"render": {
+			"description": "Render",
+			"parameters": []
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Box."
+		}
+	}
+}

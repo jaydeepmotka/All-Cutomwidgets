@@ -1,0 +1,131 @@
+{
+    "id": "com.sap.v1.coloredbox.mj",
+    "version": "4.6.7",
+    "name": "Colored Box 1",
+    "description": "A colored box",
+    "newInstancePrefix": "ColoredBox",
+    "icon": "https://20bd-49-36-80-233.in.ngrok.io/static/plus.png",
+    "vendor": "Jaydeep Motka",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-coloredbox-mj",
+        "url": "https://20bd-49-36-80-233.in.ngrok.io/static/coloredbox.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      },
+      {
+        "kind": "builder",
+        "tag": "com-sap-sample-coloredbox-builder-mj",
+        "url": "https://20bd-49-36-80-233.in.ngrok.io/static/coloredbox_builder.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "color": {
+        "type": "string",
+        "description": "Background color",
+        "default": "red"
+      },
+      "name": {
+        "type": "string",
+        "description": "Name",
+        "default": ""
+      },
+      "opacity": {
+        "type": "number",
+        "description": "Opacity",
+        "default": 1
+      },
+      "radius": {
+        "type": "string",
+        "description": "Radius",
+        "default": "yellow"
+      },
+      "width": {
+        "type": "integer",
+        "default": 100
+      },
+      "height": {
+        "type": "integer",
+        "default": 100
+      }
+    },
+    "methods": {
+      "setColor": {
+        "description": "Sets the background color.",
+        "parameters": [
+          {
+            "name": "newColor",
+            "type": "string",
+            "description": "The new background color"
+          }
+        ],
+        "body": "this.color = newColor;"
+      },
+      "setRadis": {
+        "description": "Sets the border color.",
+        "parameters": [
+          {
+            "name": "newRadius",
+            "type": "string",
+            "description": "The new border color"
+          }
+        ],
+        "body": "this.radius = newRadius;"
+      },
+      "setOpacity": {
+        "description": "Sets the box opacity.",
+        "parameters": [
+          {
+            "name": "newOpacity",
+            "type": "number",
+            "description": "The new box opacity"
+          }
+        ],
+        "body": "this.opacity = newOpacity;"
+      },
+      "setName": {
+        "description": "Sets name",
+        "parameters": [
+          {
+            "name": "newColor",
+            "type": "string",
+            "description": "The new background color"
+          }
+        ],
+        "body": "this.name = newColor;"
+      },
+      "getColor": {
+        "returnType": "string",
+        "description": "Returns the background color.",
+        "body": "return this.color;"
+      },
+      "getRadis": {
+        "returnType": "string",
+        "description": "Returns the border color.",
+        "body": "return this.radius;"
+      },
+      "getOpacity": {
+        "returnType": "number",
+        "description": "Returns the box opacity.",
+        "body": "return this.opacity;"
+      },
+      "getName": {
+        "returnType": "string",
+        "description": "Returns the background color.",
+        "body": "return this.name;"
+      },
+      "getInfo": {
+        "returnType": "ApplicationInfo",
+        "description": "Returns the background color.",
+        "body": "return Application.getInfo();"
+      }
+    },
+    "events": {
+      "onClick": { "description": "Called when the user clicks the Colored Box." }
+    }
+  }
