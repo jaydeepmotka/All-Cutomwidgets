@@ -23,7 +23,7 @@
         <l:content>
           <Input
             id="passwordInput"
-            type="text"
+            type="password"
             placeholder="Enter password ..." liveChange="onButtonPress"/>
         </l:content>
       </l:VerticalLayout>
