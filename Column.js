@@ -115,8 +115,8 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
 var v1 = "";
 var v2 = "";
 var val = {
-  country: v1,
-  value: v2
+  country: "",
+  value: ""
  };
 for(var i=0; i<resultSet.lenth; i++){
   val.country.push(resultSet[i].State.description);
