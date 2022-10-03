@@ -111,6 +111,7 @@ series.columns.template.adapters.add("fill", function(fill, target) {
 series.columns.template.adapters.add("stroke", function(stroke, target) {
   return chart.get("colors").getIndex(series.columns.indexOf(target));
 });
+console.log(resultSet);
 
 var v1 = "";
 var v2 = "";
