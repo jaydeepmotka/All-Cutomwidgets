@@ -31,10 +31,6 @@ var getScriptPromisify = (src) => {
 this.render(this._resultSet)
 
     }
-    
-//      onCustomWidgetAfterUpdate(changedProperties) {
-//       loadthis(this);
-//     }
 
     //render() method to plot chart - resultSet1 holds data from SAC table/chart.
     async render(resultSet) {
