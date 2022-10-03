@@ -68,7 +68,7 @@ cursor.lineY.set("visible", false);
 
 // Create axes
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 5 });
 xRenderer.labels.template.setAll({
   rotation: -90,
   centerY: am5.p50,
