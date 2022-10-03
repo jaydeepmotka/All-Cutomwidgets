@@ -112,6 +112,17 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
   return chart.get("colors").getIndex(series.columns.indexOf(target));
 });
 
+var v1 = "";
+var v2 = "";
+var val = {
+  country: v1,
+  value: v2
+ };
+for(var i=0; i<resultSet.lenth; i++){
+  val.country.push(resultSet[i].State.description);
+  val.value.push(parseFloat(resultSet[i]["@MeasureDimension"].rawValue));
+}
+console.log(val);
 
 // Set data
 var data = [{
