@@ -44,14 +44,14 @@ this.render(this._resultSet)
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-// var root = am5.Root.new(this._root);
+var root = am5.Root.new(this._root);
 
 
-// // Set themes
-// // https://www.amcharts.com/docs/v5/concepts/themes/
-// root.setThemes([
-//   am5themes_Animated.new(root)
-// ]);
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
 
 
 // Create chart
