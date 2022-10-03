@@ -33,7 +33,7 @@ var getScriptPromisify = (src) => {
     }
 
     //render() method to plot chart - resultSet1 holds data from SAC table/chart.
-    async render() {
+    async render(resultSet) {
       await getScriptPromisify('https://cdn.amcharts.com/lib/5/index.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/5/xy.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/5/themes/Animated.js');
