@@ -119,8 +119,8 @@ var val = {
   value: v2
  };
 for(var i=0; i<resultSet.lenth; i++){
-  val.country.v1.push(resultSet[i].State.description);
-  val.value.v2.push(parseFloat(resultSet[i]["@MeasureDimension"].rawValue));
+  val.country[i].v1.push(resultSet[i].State.description);
+  val.value[i].v2.push(parseFloat(resultSet[i]["@MeasureDimension"].rawValue));
 }
 console.log(val);
 
