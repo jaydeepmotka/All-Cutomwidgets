@@ -87,9 +87,10 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   maxDeviation: 0.3,
   renderer: am5xy.AxisRendererY.new(root, {})
 }));
-const yAxisRenderer = yAxis.get('renderer');
-    yAxisRenderer.grid.template.setAll({ disabled: true, visible: false });
 
+const xAxisRenderer = xAxis.get('renderer');
+    xAxisRenderer.grid.template.setAll({ disabled: true, visible: false });//hides all
+    // yAxisRenderer.labels.template.setAll({ disabled: true, visible: false }); //hides all
 // Create series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 var series = chart.series.push(am5xy.ColumnSeries.new(root, {
@@ -113,7 +114,6 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
   return chart.get("colors").getIndex(series.columns.indexOf(target));
 });
 console.log(resultSet);
-
 var data1=[];
 for(var i=0; i<resultSet.length; i++){
     
@@ -122,9 +122,11 @@ for(var i=0; i<resultSet.length; i++){
 }
 console.log(data1);
 
+// Set data
 
 xAxis.data.setAll(data1);
 series.data.setAll(data1);
+
 
 // Make stuff animate on load
 // https://www.amcharts.com/docs/v5/concepts/animations/
