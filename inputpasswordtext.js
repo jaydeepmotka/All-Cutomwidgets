@@ -31,7 +31,7 @@
       </script>        
   `;
 
-  class inputext extends HTMLElement {
+  class Inputext extends HTMLElement {
 
     constructor() {
       super();
@@ -180,7 +180,7 @@
     }
 
   }
-  customElements.define("com-fd-djaja-sap-sac-inputpassword", inputext);
+  customElements.define("com-fd-djaja-sap-sac-inputpasswordtext", Inputext);
 
   // UTILS
   function loadthis(that) {
