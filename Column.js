@@ -115,12 +115,12 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
 var v1 = "";
 var v2 = "";
 var val = {
-  country: "",
-  value: ""
+  country: v1,
+  value: v2
  };
 for(var i=0; i<resultSet.lenth; i++){
-  val.country.push(resultSet[i].State.description);
-  val.value.push(parseFloat(resultSet[i]["@MeasureDimension"].rawValue));
+  val.country.v1.push(resultSet[i].State.description);
+  val.value.v2.push(parseFloat(resultSet[i]["@MeasureDimension"].rawValue));
 }
 console.log(val);
 
