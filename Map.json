@@ -20,5 +20,16 @@
 	"properties": {
 		  "width": {"type": "integer","default": 600},
 		  "height": {"type": "integer","default": 420 }
+	},
+	"methods": {
+		"render": {
+			"description": "Render",
+			"parameters": []
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Box."
+		}
 	}
   }		  
