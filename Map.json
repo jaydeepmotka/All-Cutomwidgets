@@ -1,0 +1,24 @@
+{
+	"eula": "",
+	"vendor": "jaydeep",
+	"license": "",
+	"id": "com.sap.sac.sample.map.prepared",
+	"version": "1.0.0",
+	"name": "Map",
+	"newInstancePrefix": "Map",
+	"description": "Map",
+	"webcomponents": [
+	  {
+		"kind": "main",
+		"tag": "com-sap-sample-map-prepared",
+		"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/Map.js",
+		"integrity": "",
+		"ignoreIntegrity": true
+	  }
+	],
+	
+	"properties": {
+		  "width": {"type": "integer","default": 600},
+		  "height": {"type": "integer","default": 420 }
+	}
+  }		  
