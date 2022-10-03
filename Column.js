@@ -113,18 +113,13 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
 });
 console.log(resultSet);
 
-var v1 = "";
-var v2 = "";
-var val = {
-  country: v1,
-  value: v2
- };
+var data1=[];
 for(var i=0; i<resultSet.lenth; i++){
-  val[i]={country:resultSet[i].State.description,
-      value:parseFloat(resultSet[i]["@MeasureDimension"].rawValue)
-  };
+    
+      data1.push({"country":resultSet[i].State.description,
+      "value":parseFloat(resultSet[i]["@MeasureDimension"].rawValue)});
 }
-console.log(val);
+console.log(data1);
 
 // Set data
 var data = [{
