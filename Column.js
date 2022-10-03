@@ -28,7 +28,7 @@ var getScriptPromisify = (src) => {
 
       //_props object is used to hold properties infosrmation
       this._props = {}
-
+this.render(this._resultSet)
 
     }
 
