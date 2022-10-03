@@ -4,29 +4,29 @@
 	"name": "Demo_Gauge",
 	"description": "A gauge_demo",
 	"newInstancePrefix": "fGauge",
-	"icon": "https://example.demo/box/icon.png",
-	"vendor": "Demo",
+	"icon": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/icon.png",
+	"vendor": "jaydeep",
 	"eula": "EULA",
 	"license": "1.0",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "com-demo-gauge",
-			"url": "https://example.demo/box/box.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/f_gauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-demo-gauge-sps",
-			"url": "https://example.demo/box/box_sps.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/styling_fgauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-demo-box-bps",
-			"url": "https://example.demo/box/box_bps.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/builder_fgauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
