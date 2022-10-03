@@ -114,7 +114,7 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
 console.log(resultSet);
 
 var data1=[];
-for(var i=0; i<resultSet.lenth; i++){
+for(var i=0; i<resultSet.length; i++){
     
       data1.push({"country":resultSet[i].State.description,
       "value":parseFloat(resultSet[i]["@MeasureDimension"].rawValue)});
