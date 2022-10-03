@@ -87,7 +87,8 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   maxDeviation: 0.3,
   renderer: am5xy.AxisRendererY.new(root, {})
 }));
-
+const yAxisRenderer = yAxis.get('renderer');
+    yAxisRenderer.grid.template.setAll({ disabled: true, visible: false });
 
 // Create series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
