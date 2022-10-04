@@ -36,7 +36,7 @@ var getScriptPromisify = (src) => {
 
     //render() method to plot chart - resultSet1 holds data from SAC table/chart.
     set myDataSource (dataBinding){
-      this.myDataSource = dataBinding
+      this._myDataSource = dataBinding
       this.render()
     } 
     async render() {
@@ -44,10 +44,16 @@ var getScriptPromisify = (src) => {
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/themes/animated.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/charts.js');
 
-      const dimension = this._myDataSource.metadata.feeds.dimension.value[0]
+      if(!this._myDataSource || this._myDataSource.state !== 'success'){
+        return
+      }
+
+      const dimension = this._myDataSource.metadata.feeds.dimensions.value[0]
+      const measure = this._myDataSource.metadata.feeds.measures.value[0]
       const data = this._myDataSource.data.map(data=> {
         return{
-          name:data[dimension].label
+          name:data[dimension].label,
+          value:data[measure].raw
         }
       })
       // Themes begin
@@ -59,45 +65,8 @@ var getScriptPromisify = (src) => {
 
       chart.legend = new am4charts.Legend();
 
-      chart.data = [
-        {
-          country: "Lithuania",
-          litres: 501.9
-        },
-        {
-          country: "Czech Republic",
-          litres: 301.9
-        },
-        {
-          country: "Ireland",
-          litres: 201.1
-        },
-        {
-          country: "Germany",
-          litres: 165.8
-        },
-        {
-          country: "Australia",
-          litres: 139.9
-        },
-        {
-          country: "Austria",
-          litres: 128.3
-        },
-        {
-          country: "UK",
-          litres: 99
-        },
-        {
-          country: "Belgium",
-          litres: 60
-        },
-        {
-          country: "The Netherlands",
-          litres: 50
-        }
-      ];
-
+      chart.data =  data;
+    
       chart.innerRadius = 100;
 
       var series = chart.series.push(new am4charts.PieSeries3D());
