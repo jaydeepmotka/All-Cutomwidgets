@@ -44,7 +44,7 @@ var getScriptPromisify = (src) => {
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/themes/animated.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/charts.js');
 
-      const dimension = this._myDataSource.metadata.feeds.dimension.value[0];
+      const dimension = this._myDataSource.metadata.feeds.dimension.value[0]
       console.log(dimension);
       // Themes begin
       am4core.useTheme(am4themes_animated);
