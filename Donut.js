@@ -103,7 +103,7 @@ var getScriptPromisify = (src) => {
   console.log(series1);
   console.log(series2);
         if(series1.length > 0){
-         async render();
+         render();
         }
 });
 
