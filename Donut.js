@@ -30,18 +30,22 @@ var getScriptPromisify = (src) => {
       this._props = {}
 
       //Call render() method to plot chart
-      this.render(this._resultSet)
-      this.render(this._S1)
-      this.render(this._S2)
+      this.render()
 
     }
 
     //render() method to plot chart - resultSet1 holds data from SAC table/chart.
+    set myDataSource (dataBinding){
+      this.myDataSource = dataBinding
+      this.render()
+    } 
     async render() {
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/core.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/themes/animated.js');
       await getScriptPromisify('https://cdn.amcharts.com/lib/4/charts.js');
 
+      const dimension = this.myDataSource.metadata.feeds.dimension.value[0];
+      console.log(dimension);
       // Themes begin
       am4core.useTheme(am4themes_animated);
       // Themes end
