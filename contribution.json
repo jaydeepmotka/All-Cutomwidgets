@@ -7,19 +7,19 @@
 	"name": "Popover",
 	"newInstancePrefix": "Popover",
 	"description": "A Popover Renderer",
-	"icon": "https://f4d4-2405-201-2014-3948-8dd0-9944-481d-889.in.ngrok.io/static/icon.png",
+	"icon": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/icon.png",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "sdk-popover",
-			"url": "https://f4d4-2405-201-2014-3948-8dd0-9944-481d-889.in.ngrok.io/static/main-webcomponent.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/main-webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "sdk-popover-aps",
-			"url": "https://f4d4-2405-201-2014-3948-8dd0-9944-481d-889.in.ngrok.io/static/styling-webcomponent.js",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/styling-webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
