@@ -102,9 +102,7 @@ var getScriptPromisify = (src) => {
   var series2 = ev.target.dataItem.category;
   console.log(series1);
   console.log(series2);
-        if(series2 != "" ){
-         render();
-        }
+        
 });
 
     }
