@@ -98,8 +98,10 @@ var getScriptPromisify = (src) => {
       console.log(series.dataFields.value);
       
       series.slices.template.events.on("hit", function(ev) {
-  var series = ev.target.dataItem.value;
-  console.log(series);
+  var series1 = ev.target.dataItem.value;
+  var series2 = ev.target.dataItem.category;
+  console.log(series1);
+  console.log(series2);
 });
 
     }
