@@ -567,7 +567,7 @@
                         this._inpField.setAttribute("value", inpItem.getAttribute('value'));
                         this._inpField.setAttribute("key", inpItem.getAttribute('key'));
 
-                        let selectEvent = new Event("onSelect");
+                        let selectEvent = new Event("onChange");
                         this.dispatchEvent(selectEvent);
 
                         this._closeAllLists();
