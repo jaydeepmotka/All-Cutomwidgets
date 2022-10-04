@@ -1,0 +1,133 @@
+{
+	"name": "Di Autocomplete Widget",
+	"description": "Di Autocomplete Input",
+	"eula": "",
+	"vendor": "Decision Inc - Emiliyan Tanev",
+	"license": "",
+	"id": "com.sap.decisioninc.autocomplete1",
+	"newInstancePrefix": "DiAutoComp1",
+	"version": "0.8.0",
+	"icon": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sap-decinsioninc-autocomplete1",
+			"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {},
+	"methods": {
+		"addItem": {
+			"description": "Adds new autocomplete items",
+			"parameters": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "The key of the item which won't be visible"
+				},
+				{
+					"name": "text",
+					"type": "string",
+					"description": "The text used to search and match with the entry"
+				}
+			]
+		},
+		"addItemsArr": {
+			"description": "Adds new autocomplete items",
+			"parameters": [
+				{
+					"name": "key",
+					"type": "string[]",
+					"description": "The array of keys of the item which won't be visible"
+				},
+				{
+					"name": "text",
+					"type": "string[]",
+					"description": "The array of text values used to search and match with the entry"
+				}
+			]
+		},
+		"getSelectedKey": {
+			"description": "Retrieves the selected key from the parameters",
+			"returnType": "string"
+		},
+		"getSelectedText": {
+			"description": "Retrieves the selected Text from the parameteres",
+			"returnType": "string"
+		},
+		"getValue": {
+			"description": "Retrieves the value on the input field which may not have a match",
+			"returnType": "string"
+		},
+		"removeAllItems": {
+			"description": "Removes all items in the list"
+		},
+		"removeItem": {
+			"description": "Removes a specific item from the list via the key",
+			"parameters": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "The key to identify the entry"
+				}
+			]
+		},
+		"setInputStyle": {
+			"description": "Overwrites the default style attribute of the input field",
+			"parameters": [
+				{
+					"name": "styleStr",
+					"type": "string",
+					"description": "String with one or multiple style entries"
+				}
+			]
+		},
+		"setListStyle": {
+			"description": "Overwrites the default style attribute of the lists in the search",
+			"parameters": [
+				{
+					"name": "styleStr",
+					"type": "string",
+					"description": "String with one or multiple style entries"
+				}
+			]
+		},
+		"setListLimit": {
+			"description": "Sets the maximum matching entries shown at the same time",
+			"parameters": [
+				{
+					"name": "limit",
+					"type": "integer",
+					"description": "Sets the maximum matching entries shown at the same time"
+				}
+			]
+		},
+		"setPlaceholder": {
+			"description": "Sets a placeholder on the input field when it is empty",
+			"parameters": [
+				{
+					"name": "text",
+					"type": "string",
+					"description": "The text that will be visible when the field is empty"
+				}
+			]
+		},
+		"setSelectedKey": {
+			"description": "Sets the input with a text value based on the provided key",
+			"parameters": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "The key to identify the entry"
+				}
+			]
+		}
+	},
+	"events": {
+		"onSelect": {
+			"description": "Called when a user selects an entry from the list via click or enter or writes fully the text value"
+		}
+	}
+}
