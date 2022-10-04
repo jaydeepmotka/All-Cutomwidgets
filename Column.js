@@ -113,9 +113,6 @@ series.columns.template.adapters.add("stroke", function(stroke, target) {
   return chart.get("colors").getIndex(series.columns.indexOf(target));
 });
       
-      columnSeries.columns.template.events.on("click", function(ev) {
-  console.log("Clicked on a column", ev.target);
-});
 console.log(resultSet);
 var data1=[];
 for(var i=0; i<resultSet.length; i++){
