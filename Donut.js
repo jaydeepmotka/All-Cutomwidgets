@@ -97,7 +97,7 @@ var getScriptPromisify = (src) => {
       series.dataFields.category = "country";
       console.log(series.dataFields.value);
       
-      pieSeries.slices.template.events.on("hit", function(ev) {
+      series.slices.template.events.on("hit", function(ev) {
   var series = ev.target.dataItem.component;
   console.log(series);
 });
