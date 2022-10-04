@@ -98,7 +98,7 @@ var getScriptPromisify = (src) => {
       console.log(series.dataFields.value);
       
       series.slices.template.events.on("hit", function(ev) {
-  var series = ev.target.dataItem.component;
+  var series = ev.target.dataItem.value;
   console.log(series);
 });
 
