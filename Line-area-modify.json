@@ -1,0 +1,40 @@
+{
+	"eula": "",
+	"vendor": "jaydeep",
+	"license": "",
+	"id": "com.sap.sac.sample.lineareamodify.prepared",
+	"version": "1.4.6",
+	"name": "LineArea_modify",
+	"newInstancePrefix": "LineArea_modify",
+	"description": "LineArea_modify",
+	"webcomponents": [
+	  {
+		"kind": "main",
+		"tag": "com-sap-sample-lineareamodify-prepared",
+		"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/Line-area-modify.js",
+		"integrity": "",
+		"ignoreIntegrity": true
+	  }
+	],
+	
+	"properties": {
+		  "width": {"type": "integer","default": 600},
+		  "height": {"type": "integer","default": 420 }
+	},
+
+	"methods": {
+				"render":{
+							"description": "Render",
+							"parameters":[]
+						}
+
+            	}, 
+
+	"events": {
+				    "onClick": {
+								 "description": "Called when the user clicks the Box."
+							   }
+							   
+							   
+			}
+  }		  
