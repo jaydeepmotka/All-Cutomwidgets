@@ -1,0 +1,45 @@
+{
+	"eula": "",
+	"vendor": "jaydeep",
+	"license": "",
+	"id": "com.sap.sac.sample.wordcount.prepared",
+	"version": "1.4.6",
+	"name": "wordcount",
+	"newInstancePrefix": "wordcount",
+	"description": "wordcount",
+	"webcomponents": [
+	  {
+		"kind": "main",
+		"tag": "com-sap-sample-wordcount-prepared",
+		"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/Wordcount.js",
+		"integrity": "",
+		"ignoreIntegrity": true
+	  }
+	],
+	
+	"properties": {
+		  "width": {"type": "integer","default": 600},
+		  "height": {"type": "integer","default": 420 }
+	},
+
+	"methods": {
+				"render":{
+							"description": "Render",
+							"parameters":[
+								{
+									"name": "result",
+									"type": "any"
+								}
+							]
+						}
+
+            	}, 
+
+	"events": {
+				    "onClick": {
+								 "description": "Called when the user clicks the Box."
+							   }
+							   
+							   
+			}
+  }		  
