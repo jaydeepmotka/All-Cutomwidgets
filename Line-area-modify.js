@@ -1325,7 +1325,15 @@ chart.cursor.lineY.disabled = true;
 var scrollbarX = new am4charts.XYChartScrollbar();
 scrollbarX.series.push(series);
 chart.scrollbarX = scrollbarX; */
+var circleBullet = series1.bullets.push(new am4charts.CircleBullet());
+circleBullet.circle.radius = 3;
 
+var bullet = series.bullets.push(new am4charts.Bullet());
+var square = bullet.createChild(am4core.Rectangle);
+square.width = 5;
+square.height = 5;
+square.horizontalCenter = "middle";
+square.verticalCenter = "middle";
 
     }
   }
