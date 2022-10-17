@@ -45,6 +45,8 @@ await getScriptPromisify('https://code.highcharts.com/modules/accessibility.js')
 
 Highcharts.chart(this._root, {
 chart: {
+width: 1000,
+height: 500,
 type: 'column'
 },
 title:{
