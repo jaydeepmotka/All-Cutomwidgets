@@ -18,8 +18,8 @@
 	],
 	
 	"properties": {
-		  "width": {"type": "integer","default": 600},
-		  "height": {"type": "integer","default": 420 }
+		  "width": {"type": "integer","default": 1000},
+		  "height": {"type": "integer","default": 500 }
 	},
 
 	"methods": {
