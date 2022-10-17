@@ -1,0 +1,40 @@
+{
+	"eula": "",
+	"vendor": "jaydeep",
+	"license": "",
+	"id": "com.sap.sac.sample.highchart.barchart.prepared",
+	"version": "4.4.6",
+	"name": "barchart",
+	"newInstancePrefix": "barchart",
+	"description": "barchart",
+	"webcomponents": [
+	  {
+		"kind": "main",
+		"tag": "com-sap-sample-highchart-barchart-prepared",
+		"url": "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/highchart.js",
+		"integrity": "",
+		"ignoreIntegrity": true
+	  }
+	],
+	
+	"properties": {
+		  "width": {"type": "integer","default": 600},
+		  "height": {"type": "integer","default": 420 }
+	},
+
+	"methods": {
+				"render":{
+							"description": "Render",
+							"parameters":[]
+						}
+
+            	}, 
+
+	"events": {
+				    "onClick": {
+								 "description": "Called when the user clicks the Box."
+							   }
+							   
+							   
+			}
+  }		  
