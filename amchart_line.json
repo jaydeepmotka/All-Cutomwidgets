@@ -1,0 +1,86 @@
+{
+    "eula": "",
+    "vendor": "Digital-Sweep",
+    "license": "",
+    "id": "com.sap.sac.sample.linearea.amchart",
+    "version": "1.0.0",
+    "name": "LineArea",
+    "newInstancePrefix": "LineArea",
+    "description": "LineArea",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-sap-sample-linearea-amchart",
+            "url": "https://c9dd-2405-201-2014-3948-55e2-5abb-6fd0-91f1.ngrok.io/static/amchart_line.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 600
+        },
+        "height": {
+            "type": "integer",
+            "default": 420
+        },
+        "resultset": {
+            "type": "any",
+            "default": []
+        },
+        "kflist": {
+            "type": "any",
+            "default": []
+        },
+        "json": {
+            "type": "string",
+            "default": ""
+        },
+        "frequency": {
+            "type": "string",
+            "default": ""
+        },
+        "range":{
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "methods": {
+        "render": {
+            "description": "Render",
+            "parameters": [
+                {
+                    "name": "ResultSet",
+                    "type": "any",
+                    "description": "reasultset"
+                },
+                {
+                    "name": "KFName",
+                    "type": "any",
+                    "description": "KFName"
+                },
+                {
+                    "name": "JSON",
+                    "type": "string",
+                    "description": "config"
+                },
+                {
+                    "name": "Frequency",
+                    "type": "string",
+                    "description": "chart frequency"
+                },
+                {
+                    "name": "Range",
+                    "type": "boolean",
+                    "description": "Is range on"
+                }
+            ]
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "Called when the user clicks the chart."
+        }
+    }
+}
