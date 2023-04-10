@@ -18,6 +18,8 @@
     //Main JS Class holds methods to be called
     class SamplePrepared extends HTMLElement {
         constructor() {
+            
+            console.log("constructor");
 
             //call SAC DOM Super method to get shadow DOM information
             super()
