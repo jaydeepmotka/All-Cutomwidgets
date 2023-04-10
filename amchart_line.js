@@ -111,7 +111,7 @@
             // am4core.useTheme(am4themes_animated);
 
             var mychatrtDiv = this._shadowRoot.getElementById('chartdiv');
-            am4core.ready(function () {
+//             am4core.ready(function () {
 
 
                 // Create chart instance
@@ -189,7 +189,7 @@
                 chart.legend.itemContainers.template.tooltipText = "{dataContext.dummyData.description}"
                 chart.cursor = new am4charts.XYCursor();
 
-            })
+//             })
 
         }
         // this.render(this._resultSet,this._Vrname,this.KFName,this.YDirection,this._S1,this._S2,this.ReplaceNull)
