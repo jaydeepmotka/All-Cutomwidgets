@@ -45,7 +45,7 @@
             new Promise(resolve => {
 
                 let script = document.createElement('script');
-                script.src = "https://c9dd-2405-201-2014-3948-55e2-5abb-6fd0-91f1.ngrok.io/static/core.js";
+                script.src = "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/core.js";
                 // script.src = "//cdn.amcharts.com/lib/4/core.js";
                 script.onload = () => {
                     resolve(script);
@@ -57,7 +57,7 @@
                 let timer = null;
                 let script1 = document.createElement('script');
                 timer = setTimeout(function () {
-                    script1.src = "https://c9dd-2405-201-2014-3948-55e2-5abb-6fd0-91f1.ngrok.io/static/charts.js";
+                    script1.src = "https://jaydeepmotka.github.io/AllCutomwidgets.github.io/charts.js";
                     // script1.src = "//cdn.amcharts.com/lib/4/charts.js";
                     script1.onload = () => {
                         resolve(script1);
